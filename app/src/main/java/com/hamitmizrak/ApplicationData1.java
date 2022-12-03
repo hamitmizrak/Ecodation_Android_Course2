@@ -17,6 +17,8 @@ public class ApplicationData1 extends AppCompatActivity {
     private ImageView imageViewId;
     private TextView textViewApplicationId;
     private String userData;
+    private Button buttonResetId;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,12 +30,13 @@ public class ApplicationData1 extends AppCompatActivity {
         buttonSubmitId=findViewById(R.id.buttonSubmitId);
         imageViewId=findViewById(R.id.imageViewId);
         textViewApplicationId=findViewById(R.id.textViewApplicationId);
+        buttonResetId=findViewById(R.id.buttonResetId);
 
-        // ClickListener
+        // Submit ClickListener
         buttonSubmitId.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(ApplicationData1.this, "Tıklandı", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ApplicationData1.this, "Yazıldı", Toast.LENGTH_SHORT).show();
                 //EditText veri almak
                  userData=editTextApplicationId.getText().toString();
 
@@ -45,6 +48,13 @@ public class ApplicationData1 extends AppCompatActivity {
 
                 //Resim değiştirmek
                 imageViewId.setImageResource(R.drawable.main1);
+            }
+        }); //end Submit ClickListener
+        buttonResetId.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(ApplicationData1.this, "Temizlendi", Toast.LENGTH_SHORT).show();
+                textViewApplicationId.setText("");
             }
         });
     } //end

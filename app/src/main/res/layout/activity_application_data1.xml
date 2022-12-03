@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/earth"
+    android:background="@color/black"
     tools:context=".ApplicationData1">
 
 
@@ -17,15 +17,15 @@
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         android:padding="10dp"
-        android:background="@color/black"
-        android:textColor="@color/white"/>
+        android:background="@color/white"
+        android:textColor="@color/black"/>
 
     <Button
         android:id="@+id/buttonSubmitId"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginBottom="10dp"
-        android:text="Gönder"/>
+        android:text="@string/submit"/>
 
     <ImageView
         android:id="@+id/imageViewId"
@@ -37,9 +37,18 @@
         android:id="@+id/textViewApplicationId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/black"
-        android:textColor="@color/white"
+        android:background="@color/white"
+        android:textColor="@color/black"
         android:padding="10dp"
         android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/buttonResetId"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/reset"
+        android:background="@color/red"
+        android:textColor="@color/white"/>
 
 </LinearLayout>

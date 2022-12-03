@@ -3,6 +3,7 @@
     <string name="name">Adınız</string>
     <string name="input_name">Adınızı Giriniz</string>
     <string name="submit">Gönder</string>
+    <string name="reset">Temizle</string>
 
 
 </resources>
