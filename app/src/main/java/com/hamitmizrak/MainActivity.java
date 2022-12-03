@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(otherActivityIntent);
             }
         });
+
         //Application 1
         buttonApplicationData1Id=findViewById(R.id.buttonApplicationData1Id);
         buttonApplicationData1Id.setOnClickListener(new View.OnClickListener() {
