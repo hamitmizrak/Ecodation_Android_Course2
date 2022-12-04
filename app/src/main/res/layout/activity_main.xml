@@ -29,6 +29,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:text="Uygulama 1"/>
+
+
+            <Button
+                android:id="@+id/buttonActivityBlueId"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Connection Activity Blue"
+                android:backgroundTint="@color/red"/>
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>

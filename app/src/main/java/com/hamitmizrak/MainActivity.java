@@ -14,11 +14,15 @@ public class MainActivity extends AppCompatActivity {
     private Button buttonOtherActivityId;
     private Button buttonApplicationData1Id;
 
+    // activityler arası veri taşımak
+    private Button buttonActivityBlueId;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //start data
+        //ID
         //other Activity
         buttonOtherActivityId=findViewById(R.id.buttonOtherActivityId);
         buttonOtherActivityId.setOnClickListener(new View.OnClickListener() {
@@ -43,6 +47,17 @@ public class MainActivity extends AppCompatActivity {
                 Intent intentApplication1=new Intent(getApplicationContext(),ApplicationData1.class);
                 Toast.makeText(MainActivity.this, "My Application Data 1 Redirect", Toast.LENGTH_SHORT).show();
                 startActivity(intentApplication1);
+            }
+        });
+
+        //ID Blue other connection activity
+        buttonActivityBlueId=findViewById(R.id.buttonActivityBlueId);
+        buttonActivityBlueId.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentBlueConnection=new Intent(getApplicationContext(),ActivityConnectionBlue.class);
+                Toast.makeText(MainActivity.this, "Activity Connection Blue", Toast.LENGTH_SHORT).show();
+                startActivity(intentBlueConnection);
             }
         });
 

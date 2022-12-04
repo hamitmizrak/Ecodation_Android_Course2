@@ -22,6 +22,7 @@ public class ApplicationData1 extends AppCompatActivity {
     private Button buttonResetId;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -70,5 +71,14 @@ public class ApplicationData1 extends AppCompatActivity {
                 textViewApplicationId.setText("");
             }
         });
+
+
     } //end
 } //end ApplicationData1
+
+/*
+Button oluştur
+activity connection
+1.Activity: EditText , Button
+2.Activity: 1.activity gelen veri alacak
+*/
