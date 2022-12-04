@@ -11,8 +11,8 @@ public class ImageTutorials extends AppCompatActivity {
 
     //Global Variable
     private ImageView ImageViewInternetPictures;
-    private String internetPicturesUrl="https://ecodation.com/wp-content/uploads/2021/03/cropped-ecodationlogo.png";
-
+    private String internetPictureUrl="https://ecodation.com/wp-content/uploads/2021/03/cropped-ecodationlogo.png";
+    private String internetPictureGif="https://yunti.files.wordpress.com/2019/01/turk_bayragi_03_tam35blog.gif";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,7 +20,7 @@ public class ImageTutorials extends AppCompatActivity {
         //ID
         ImageViewInternetPictures=findViewById(R.id.ImageViewInternetPictures);
         Glide.with(getApplicationContext())
-                .load(internetPicturesUrl)
+                .load(internetPictureGif)
                 .into(ImageViewInternetPictures);
     }
 }
