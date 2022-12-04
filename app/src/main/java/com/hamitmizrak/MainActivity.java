@@ -17,6 +17,9 @@ public class MainActivity extends AppCompatActivity {
     // activityler arası veri taşımak
     private Button buttonActivityBlueId;
 
+    //image
+    private Button buttonActivityImageId;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,6 +61,18 @@ public class MainActivity extends AppCompatActivity {
                 Intent intentBlueConnection=new Intent(getApplicationContext(),ActivityConnectionBlue.class);
                 Toast.makeText(MainActivity.this, "Activity Connection Blue", Toast.LENGTH_SHORT).show();
                 startActivity(intentBlueConnection);
+            }
+        });
+
+
+        //picture
+        buttonActivityImageId=findViewById(R.id.buttonActivityImageId);
+        buttonActivityImageId.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentImageConnection=new Intent(getApplicationContext(),ImageTutorials.class);
+                Toast.makeText(MainActivity.this, "Resim Tutorials", Toast.LENGTH_SHORT).show();
+                startActivity(intentImageConnection);
             }
         });
 

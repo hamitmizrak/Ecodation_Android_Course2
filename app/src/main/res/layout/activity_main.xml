@@ -38,14 +38,13 @@
                 android:text="Connection Activity Blue"
                 android:backgroundTint="@color/red"/>
 
-
-            <de.hdodenhof.circleimageview.CircleImageView
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/sea"
-                app:civ_border_color="@color/red"
-                app:civ_border_width="4dp"/>
+            <Button
+                android:id="@+id/buttonActivityImageId"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Pictures Turorials"
+                android:backgroundTint="@color/black"
+                android:textColor="@color/white"/>
 
         </LinearLayout>
     </ScrollView>
