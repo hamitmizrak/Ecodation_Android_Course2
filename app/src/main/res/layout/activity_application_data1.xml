@@ -1,54 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/black"
+    android:orientation="vertical"
     tools:context=".ApplicationData1">
 
-
-    <!-- Kullanıcıdan veri alacağım  -->
-    <EditText
-        android:id="@+id/editTextApplicationId"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:padding="10dp"
-        android:background="@color/white"
-        android:textColor="@color/black"/>
+        android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/buttonSubmitId"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginBottom="10dp"
-        android:text="@string/submit"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--kodlar buraya-->
 
-    <ImageView
-        android:id="@+id/imageViewId"
-        android:layout_width="match_parent"
-        android:src="@drawable/ai"
-        android:layout_height="200dp" />
+            <!-- Kullanıcıdan veri alacağım  -->
+            <EditText
+                android:id="@+id/editTextApplicationId"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:textColor="@color/black" />
 
-    <TextView
-        android:id="@+id/textViewApplicationId"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/white"
-        android:textColor="@color/black"
-        android:padding="10dp"
-        android:layout_marginTop="10dp"/>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/buttonResetId"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginBottom="10dp"
-        android:text="@string/reset"
-        android:background="@color/red"
-        android:textColor="@color/white"/>
+                <Button
+                    android:id="@+id/buttonSubmitId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/submit"
+                    android:layout_alignParentLeft="true"/>
 
-</LinearLayout>
+                <Button
+                    android:id="@+id/buttonResetId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/reset"
+                    android:layout_alignParentRight="true"
+                    android:backgroundTint="@color/red"
+                    android:textColor="@color/white"/>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/imageViewId"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/ai" />
+
+            <TextView
+                android:id="@+id/textViewApplicationId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -10,6 +10,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.Random;
+
 public class ApplicationData1 extends AppCompatActivity {
     //Global variable
     private EditText editTextApplicationId;
@@ -26,6 +28,7 @@ public class ApplicationData1 extends AppCompatActivity {
         setContentView(R.layout.activity_application_data1);
         //start
 
+        // ID
         editTextApplicationId=findViewById(R.id.editTextApplicationId);
         buttonSubmitId=findViewById(R.id.buttonSubmitId);
         imageViewId=findViewById(R.id.imageViewId);
@@ -46,8 +49,18 @@ public class ApplicationData1 extends AppCompatActivity {
                  //TextView Veri yazmak
                 textViewApplicationId.setText(userData.toUpperCase());
 
-                //Resim değiştirmek
-                imageViewId.setImageResource(R.drawable.main1);
+                // 4 tane resim olsun
+                //
+                Object[] imageObject=new Object[4];
+                imageObject[0]=R.drawable.earth;
+                imageObject[1]=R.drawable.ai;
+                imageObject[2]=R.drawable.sea;
+                imageObject[3]=R.drawable.main1;
+                for (int i = 0; i <imageObject.length ; i++) {
+                    Random random=new Random();
+                    int imageData=random.nextInt(4)+0;
+                    imageViewId.setImageResource((Integer) imageObject[imageData]);
+                }
             }
         }); //end Submit ClickListener
         buttonResetId.setOnClickListener(new View.OnClickListener() {
