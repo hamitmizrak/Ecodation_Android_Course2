@@ -37,6 +37,9 @@ public class MainActivity extends AppCompatActivity {
     private RadioButton RadioButtonMale;
     private Button buttonRadioSubmit;
 
+    //listView
+    private Button buttonActivityListViewId;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -123,6 +126,17 @@ public class MainActivity extends AppCompatActivity {
                         Toast.makeText(MainActivity.this, "Erkek", Toast.LENGTH_SHORT).show();
                         break;
                 }
+            }
+        });
+
+        //ListView
+        buttonActivityListViewId=findViewById(R.id.buttonActivityListViewId);
+        buttonActivityListViewId.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentImageConnection = new Intent(getApplicationContext(), ListViewData.class);
+                Toast.makeText(MainActivity.this, "ListView Clicked", Toast.LENGTH_SHORT).show();
+                startActivity(intentImageConnection);
             }
         });
 

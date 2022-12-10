@@ -57,6 +57,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 
+            <!--radio button-->
             <RadioGroup
                 android:id="@+id/radioGroupId"
                 android:layout_width="match_parent"
@@ -75,6 +76,7 @@
                     android:layout_height="55dp"
                     android:text="Erkek"/>
             </RadioGroup>
+
             <Button
                 android:id="@+id/buttonRadioSubmit"
                 android:layout_width="match_parent"
@@ -84,6 +86,14 @@
                 android:textColor="@color/white"/>
 
 
+            <!-- ListView -->
+            <Button
+                android:id="@+id/buttonActivityListViewId"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="ListView"
+                android:backgroundTint="@color/black"
+                android:textColor="@color/white"/>
 
         </LinearLayout>
     </ScrollView>
