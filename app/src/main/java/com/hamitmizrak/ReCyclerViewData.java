@@ -15,7 +15,7 @@ public class ReCyclerViewData extends AppCompatActivity {
     ArrayList<ReCyclerViewMessage> list;
     RecyclerView recyclerView;
 
-    // Iamge And Text added
+    // Image And Text added
     public void processingImageAndText(){
         String data="Android Öğreniyorum";
         ReCyclerViewMessage message1=new ReCyclerViewMessage("item 1: "+data,R.drawable.ai);

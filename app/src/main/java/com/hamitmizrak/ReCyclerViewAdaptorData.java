@@ -41,7 +41,7 @@ public class ReCyclerViewAdaptorData extends RecyclerView.Adapter<ReCyclerViewAd
         return list.size();
     }
 
-    //SubClass
+    //SUB CLASS
     class RecyclerViewHolder extends RecyclerView.ViewHolder {
         ImageView imageView;
         TextView textView;
