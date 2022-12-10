@@ -46,6 +46,18 @@
                 android:backgroundTint="@color/black"
                 android:textColor="@color/white"/>
 
+           <!-- FAB: FloatingActionButton-->
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floatingActionButtonId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <!--Progress BAr-->
+            <ProgressBar
+                android:id="@+id/progressBarId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>
