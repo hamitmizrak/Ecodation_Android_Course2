@@ -57,6 +57,33 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 
+            <RadioGroup
+                android:id="@+id/radioGroupId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/RadioButtonFemale"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:checked="true"
+                    android:text="Bayan" />
+
+                <RadioButton
+                    android:id="@+id/RadioButtonMale"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:text="Erkek"/>
+            </RadioGroup>
+            <Button
+                android:id="@+id/buttonRadioSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Submit"
+                android:backgroundTint="@color/red"
+                android:textColor="@color/white"/>
+
+
 
         </LinearLayout>
     </ScrollView>
