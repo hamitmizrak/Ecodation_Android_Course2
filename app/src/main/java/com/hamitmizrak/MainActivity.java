@@ -40,6 +40,10 @@ public class MainActivity extends AppCompatActivity {
     //listView
     private Button buttonActivityListViewId;
 
+
+    //ReCyclerView listView'e göre daha gelişmiştir.
+    private Button buttonActivityReCyclerViewId;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -136,6 +140,18 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intentImageConnection = new Intent(getApplicationContext(), ListViewData.class);
                 Toast.makeText(MainActivity.this, "ListView Clicked", Toast.LENGTH_SHORT).show();
+                startActivity(intentImageConnection);
+            }
+        });
+
+
+        //ReCyclerView
+        buttonActivityReCyclerViewId=findViewById(R.id.buttonActivityReCyclerViewId);
+        buttonActivityReCyclerViewId.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentImageConnection = new Intent(getApplicationContext(), ReCyclerViewData.class);
+                Toast.makeText(MainActivity.this, "ReCyclerView Clicked", Toast.LENGTH_SHORT).show();
                 startActivity(intentImageConnection);
             }
         });

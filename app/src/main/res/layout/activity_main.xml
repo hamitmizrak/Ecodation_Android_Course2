@@ -95,6 +95,16 @@
                 android:backgroundTint="@color/black"
                 android:textColor="@color/white"/>
 
+
+            <!-- ReCyclerView -->
+            <Button
+                android:id="@+id/buttonActivityReCyclerViewId"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="ReCyclerView"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"/>
+
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>
