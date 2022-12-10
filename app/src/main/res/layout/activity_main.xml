@@ -102,8 +102,29 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:text="ReCyclerView"
-                android:backgroundTint="@color/white"
+                android:backgroundTint="#E91E63"
                 android:textColor="@color/black"/>
+
+            <!-- MenuItem-->
+            <Button
+                android:id="@+id/buttonMenuButtonId"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Mwnu Item"
+                android:backgroundTint="#1E40E9"
+                android:textColor="@color/black"/>
+
+
+            <!-- camera -->
+            <Button
+                android:id="@+id/buttonCameraId"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Camera"
+                android:backgroundTint="#E91E63"
+                android:textColor="@color/black"/>
+
+
 
         </LinearLayout>
     </ScrollView>

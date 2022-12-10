@@ -44,6 +44,12 @@ public class MainActivity extends AppCompatActivity {
     //ReCyclerView listView'e göre daha gelişmiştir.
     private Button buttonActivityReCyclerViewId;
 
+    //menu ıtem
+    private Button buttonMenuButtonId;
+
+    //camera
+    private Button buttonCameraId;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -152,6 +158,28 @@ public class MainActivity extends AppCompatActivity {
                 Intent intentImageConnection = new Intent(getApplicationContext(), ReCyclerViewData.class);
                 Toast.makeText(MainActivity.this, "ReCyclerView Clicked", Toast.LENGTH_SHORT).show();
                 startActivity(intentImageConnection);
+            }
+        });
+
+        //menu ıtem
+        buttonMenuButtonId=findViewById(R.id.buttonMenuButtonId);
+        buttonMenuButtonId.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentMenu = new Intent(getApplicationContext(), MenuActivity.class);
+                Toast.makeText(MainActivity.this, "intentMenu Clicked", Toast.LENGTH_SHORT).show();
+                startActivity(intentMenu);
+            }
+        });
+
+        //camera
+        buttonCameraId=findViewById(R.id.buttonCameraId);
+        buttonCameraId.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentMenu = new Intent(getApplicationContext(), CameraActivity.class);
+                Toast.makeText(MainActivity.this, "CameraActivity Clicked", Toast.LENGTH_SHORT).show();
+                startActivity(intentMenu);
             }
         });
 
