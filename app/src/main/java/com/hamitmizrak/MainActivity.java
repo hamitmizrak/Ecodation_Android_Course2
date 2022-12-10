@@ -144,7 +144,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
         //ReCyclerView
         buttonActivityReCyclerViewId=findViewById(R.id.buttonActivityReCyclerViewId);
         buttonActivityReCyclerViewId.setOnClickListener(new View.OnClickListener() {

@@ -5,14 +5,17 @@ public class ReCyclerViewMessage {
     private String name;
     private int  photo;
 
+    //parametresiz constructor
     public ReCyclerViewMessage() {
     }
 
+    //parametreliconstructor
     public ReCyclerViewMessage(String name, int photo) {
         this.name = name;
         this.photo = photo;
     }
 
+    //Getter and setter
     public String getName() {
         return name;
     }

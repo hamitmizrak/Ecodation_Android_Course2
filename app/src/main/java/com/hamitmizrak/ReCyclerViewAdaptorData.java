@@ -5,10 +5,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import java.util.ArrayList;
 
 //subClass RecyclerViewHolder
@@ -17,7 +15,7 @@ public class ReCyclerViewAdaptorData extends RecyclerView.Adapter<ReCyclerViewAd
     //Field
     private ArrayList<ReCyclerViewMessage> list;
 
-    //parametreli cosntructor
+    //parametreli constructor
     public ReCyclerViewAdaptorData(ArrayList<ReCyclerViewMessage> list) {
         this.list = list;
     }
@@ -48,11 +46,11 @@ public class ReCyclerViewAdaptorData extends RecyclerView.Adapter<ReCyclerViewAd
         ImageView imageView;
         TextView textView;
 
+        //sub class Constructor
         public RecyclerViewHolder(@NonNull View itemView) {
             super(itemView);
             imageView = itemView.findViewById(R.id.imageViewRecyclerId);
             textView = itemView.findViewById(R.id.textViewRecyclerViewId);
         }
     }
-
 }
