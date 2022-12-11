@@ -132,6 +132,15 @@
                 android:backgroundTint="@color/black"
                 android:textColor="@color/white"/>
 
+            <!-- ListView -->
+            <Button
+                android:id="@+id/buttonActivityFirebaseLocalStorageId"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="LocalStorage"
+                android:backgroundTint="@color/black"
+                android:textColor="@color/white"/>
+
 
         </LinearLayout>
     </ScrollView>

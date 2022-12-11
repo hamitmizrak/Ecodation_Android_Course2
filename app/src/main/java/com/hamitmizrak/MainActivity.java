@@ -50,8 +50,12 @@ public class MainActivity extends AppCompatActivity {
     //camera
     private Button buttonCameraId;
 
-    //Firebase
+    //Firebase RealTime
     private Button buttonActivityFirebasetutorialsId;
+
+    //Firebase LocalStorage
+    private Button buttonActivityFirebaseLocalStorageId;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -186,9 +190,20 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //firebaseButton
+        //firebaseButton Realtime
         buttonActivityFirebasetutorialsId=findViewById(R.id.buttonActivityFirebasetutorialsId);
         buttonActivityFirebasetutorialsId.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentMenu = new Intent(getApplicationContext(), Firebasetutorials.class);
+                Toast.makeText(MainActivity.this, "Firebase tutorials Clicked", Toast.LENGTH_SHORT).show();
+                startActivity(intentMenu);
+            }
+        });
+
+        //firabase localStorage
+        buttonActivityFirebaseLocalStorageId=findViewById(R.id.buttonActivityFirebaseLocalStorageId);
+        buttonActivityFirebaseLocalStorageId.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intentMenu = new Intent(getApplicationContext(), Firebasetutorials.class);

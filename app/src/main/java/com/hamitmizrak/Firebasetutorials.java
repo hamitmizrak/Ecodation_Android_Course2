@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 
@@ -13,6 +14,11 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
+
+import java.io.FileNotFoundException;
+import java.io.InputStream;
 
 public class Firebasetutorials extends AppCompatActivity {
 
@@ -71,5 +77,17 @@ public class Firebasetutorials extends AppCompatActivity {
             }
         });
 
+
+        //LOCALSTORAGE
+        StorageReference storageReference= FirebaseStorage.getInstance().getReference().child("resim");
+        String URL="android.resource://com.hamitmizrak/drawable/ai";
+        Uri uri=Uri.parse(URL);
+        try {
+            InputStream inputStream=getContentResolver().openInputStream(uri);
+        }catch (FileNotFoundException e){
+            e.printStackTrace();
+        }
+
+        storageReference.putFile(uri);
     }
 }
