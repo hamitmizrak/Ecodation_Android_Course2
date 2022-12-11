@@ -124,6 +124,13 @@
                 android:backgroundTint="#E91E63"
                 android:textColor="@color/black"/>
 
+            <Button
+                android:id="@+id/buttonActivityFirebasetutorialsId"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Firebase Tutorials"
+                android:backgroundTint="@color/black"
+                android:textColor="@color/white"/>
 
 
         </LinearLayout>

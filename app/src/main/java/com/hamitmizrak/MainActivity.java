@@ -50,6 +50,9 @@ public class MainActivity extends AppCompatActivity {
     //camera
     private Button buttonCameraId;
 
+    //Firebase
+    private Button buttonActivityFirebasetutorialsId;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -179,6 +182,17 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intentMenu = new Intent(getApplicationContext(), CameraActivity.class);
                 Toast.makeText(MainActivity.this, "CameraActivity Clicked", Toast.LENGTH_SHORT).show();
+                startActivity(intentMenu);
+            }
+        });
+
+        //firebaseButton
+        buttonActivityFirebasetutorialsId=findViewById(R.id.buttonActivityFirebasetutorialsId);
+        buttonActivityFirebasetutorialsId.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentMenu = new Intent(getApplicationContext(), Firebasetutorials.class);
+                Toast.makeText(MainActivity.this, "Firebase tutorials Clicked", Toast.LENGTH_SHORT).show();
                 startActivity(intentMenu);
             }
         });
