@@ -24,15 +24,15 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
     }
 }
 
 dependencies {
 
 
-/*firebase*/
+    /*firebase*/
     /* firebase uygulamada Firebase Assistan ==> email password Authentication Asistans*/
     implementation 'com.google.firebase:firebase-auth:19.2.0'
 
@@ -71,3 +71,9 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.4'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
 }
+
+/*
+maven {
+    url "https://maven.google.com"
+}
+jcenter()*/
